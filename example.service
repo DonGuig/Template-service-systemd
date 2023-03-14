@@ -1,0 +1,12 @@
+[Unit]
+Description=Example service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/
+ExecStart=yourexecutable
+Restart=on-failure
+User=pi
+
+[Install]
+WantedBy=multi-user.target
